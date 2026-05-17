@@ -1,0 +1,98 @@
+parameters:
+    level: max
+    paths:
+        - src
+    bootstrapFiles:
+        - vendor/autoload.php
+    reportUnmatchedIgnoredErrors: false
+    ignoreErrors:
+        -
+            identifier: return.unusedType
+            path: src/FilamentPwaServiceProvider.php
+        -
+            identifier: cast.string
+            path: src/FilamentPwaServiceProvider.php
+        -
+            identifier: return.type
+            path: src/FilamentPwaServiceProvider.php
+        -
+            identifier: property.notFound
+            path: src/FilamentPwaServiceProvider.php
+        -
+            identifier: method.nonObject
+            path: src/FilamentPwaServiceProvider.php
+        -
+            identifier: cast.string
+            path: src/WebPushBroadcaster.php
+        -
+            identifier: return.type
+            path: src/WebPushBroadcaster.php
+        -
+            identifier: return.unusedType
+            path: src/WebPushBroadcaster.php
+        -
+            identifier: encapsedStringPart.nonString
+            path: src/WebPushBroadcaster.php
+        -
+            identifier: trait.unused
+            path: src/Concerns/HasWebPushSubscriptions.php
+        -
+            identifier: missingType.generics
+            path: src/Contracts/DefinesWebPushRecipientsQuery.php
+        -
+            identifier: argument.type
+            path: src/Http/Controllers/PushSubscriptionController.php
+        -
+            identifier: method.nonObject
+            path: src/Http/Controllers/PushSubscriptionController.php
+        -
+            identifier: offsetAccess.nonOffsetAccessible
+            path: src/Http/Controllers/PushSubscriptionController.php
+        -
+            identifier: return.type
+            path: src/Http/Controllers/PushSubscriptionController.php
+        -
+            identifier: return.unusedType
+            path: src/Http/Controllers/PushSubscriptionController.php
+        -
+            identifier: cast.string
+            path: src/Notifications/WebPushAlertNotification.php
+        -
+            identifier: return.type
+            path: src/Notifications/WebPushAlertNotification.php
+        -
+            identifier: return.unusedType
+            path: src/Notifications/WebPushAlertNotification.php
+        -
+            identifier: cast.string
+            path: src/Notifications/Channels/MinishlinkWebPushChannel.php
+        -
+            identifier: return.type
+            path: src/Notifications/Channels/MinishlinkWebPushChannel.php
+        -
+            identifier: return.unusedType
+            path: src/Notifications/Channels/MinishlinkWebPushChannel.php
+        -
+            identifier: function.alreadyNarrowedType
+            path: src/Notifications/Channels/MinishlinkWebPushChannel.php
+        -
+            identifier: foreach.nonIterable
+            path: src/Notifications/Channels/MinishlinkWebPushChannel.php
+        -
+            identifier: property.nonObject
+            path: src/Notifications/Channels/MinishlinkWebPushChannel.php
+        -
+            identifier: method.nonObject
+            path: src/Notifications/Channels/MinishlinkWebPushChannel.php
+        -
+            identifier: varTag.nativeType
+            path: src/Resolvers/ConfigWebPushRecipientResolver.php
+        -
+            identifier: cast.string
+            path: src/Resolvers/ConfigWebPushRecipientResolver.php
+        -
+            identifier: return.type
+            path: src/Resolvers/ConfigWebPushRecipientResolver.php
+        -
+            identifier: return.unusedType
+            path: src/Resolvers/ConfigWebPushRecipientResolver.php
