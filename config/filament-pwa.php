@@ -112,6 +112,13 @@ return [
 
     'apple_mobile_web_app_title' => env('FILAMENT_PWA_APPLE_TITLE'),
 
+    /*
+    |--------------------------------------------------------------------------
+    | Apple status bar style when installed as a web app (default, black, black-translucent)
+    |--------------------------------------------------------------------------
+    */
+    'apple_mobile_web_app_status_bar_style' => env('FILAMENT_PWA_APPLE_STATUS_BAR_STYLE', 'default'),
+
     'theme_color' => env('FILAMENT_PWA_THEME_COLOR', '#ffffff'),
 
     'background_color' => env('FILAMENT_PWA_BACKGROUND_COLOR', '#ffffff'),

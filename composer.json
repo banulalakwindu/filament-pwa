@@ -19,6 +19,10 @@
         "illuminate/routing": "^11.0|^12.0|^13.0",
         "illuminate/support": "^11.0|^12.0|^13.0"
     },
+    "suggest": {
+        "charrafimed/global-search-modal": "Required for the mobile global search render hook (GlobalSearchModalPlugin on the same panel).",
+        "hammadzafar05/mobile-bottom-nav": "Required when publishing the optional glass bottom navigation view override."
+    },
     "require-dev": {
         "laravel/pint": "^1.21",
         "orchestra/testbench": "^10.0|^11.0",

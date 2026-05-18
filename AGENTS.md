@@ -20,6 +20,7 @@
 - Keep `GlobalSearchModalPlugin` and `MobileBottomNav` in the same panel as `FilamentPwaPlugin`.
 - Publish `filament-pwa-mobile-bottom-nav` when using the glass bottom nav override; set `panel_path` to match the panel URL segment.
 - Align `client.app_badge_message_type` with `sw.js` `postMessage` type (`FILAMENT_PWA_APP_BADGE` by default).
+- Set `apple_mobile_web_app_status_bar_style` / `FILAMENT_PWA_APPLE_STATUS_BAR_STYLE` when hosts need `black` or `black-translucent` status bars.
 
 ## Do not
 

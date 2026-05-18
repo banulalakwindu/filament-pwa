@@ -2,6 +2,15 @@
 
 All notable changes to `banulakwin/filament-pwa` will be documented in this file.
 
+## 1.0.1 — 2026-05-18
+
+### Added
+- `filament-pwa.apple_mobile_web_app_status_bar_style` config and `FILAMENT_PWA_APPLE_STATUS_BAR_STYLE` env (wired into `pwa-head` meta tag).
+- Composer `suggest` entries for `charrafimed/global-search-modal` and `hammadzafar05/mobile-bottom-nav`.
+
+### Changed
+- README documents optional panel plugins and PWA theme/status bar configuration.
+
 ## 1.0.0 — 2026-05-17
 
 ### Added

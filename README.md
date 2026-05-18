@@ -90,6 +90,37 @@ use Banulakwin\FilamentPwa\FilamentPwaPlugin;
 ])
 ```
 
+### 6. Optional panel plugins
+
+These are **not** required by Composer; install them in your app when you use the related features:
+
+```bash
+composer require charrafimed/global-search-modal hammadzafar05/mobile-bottom-nav
+```
+
+```php
+use CharrafiMed\GlobalSearchModal\GlobalSearchModalPlugin;
+use HammadZafar05\MobileBottomNav\MobileBottomNav;
+
+->plugins([
+    FilamentPwaPlugin::make(),
+    GlobalSearchModalPlugin::make(),
+    MobileBottomNav::make()->items([/* ... */]),
+])
+```
+
+Run `php artisan filament-pwa:install` (or publish tag `filament-pwa-mobile-bottom-nav`) for the glass bottom nav Blade override.
+
+### 7. PWA appearance
+
+```env
+FILAMENT_PWA_THEME_COLOR=#ffffff
+FILAMENT_PWA_BACKGROUND_COLOR=#ffffff
+FILAMENT_PWA_APPLE_STATUS_BAR_STYLE=default
+```
+
+After `filament-pwa:install`, edit `public/favicon/admin-site.webmanifest` so `theme_color` / `background_color` match your brand. The status bar meta tag reads from config automatically.
+
 ---
 
 ## Sending Pushes

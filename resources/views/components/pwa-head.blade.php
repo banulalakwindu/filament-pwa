@@ -4,6 +4,7 @@
     $favicon = config('filament-pwa.favicon', []);
     $appleTitle = config('filament-pwa.apple_mobile_web_app_title')
         ?: config('filament-pwa.app_short_name', 'Admin');
+    $appleStatusBarStyle = config('filament-pwa.apple_mobile_web_app_status_bar_style', 'default');
 @endphp
 
 <link rel="icon" type="image/png" href="{{ $favicon['png_96'] ?? '/favicon/favicon-96x96.png' }}" sizes="96x96" />
@@ -15,7 +16,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="{{ $appleTitle }}" />
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-status-bar-style" content="{{ $appleStatusBarStyle }}">
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <meta name="vapid-public-key" content="{{ config('filament-pwa.vapid.public_key') }}">
 <script type="application/json" id="filament-pwa-vapid-public-json">{!! json_encode(config('filament-pwa.vapid.public_key'), JSON_THROW_ON_ERROR | JSON_UNESCAPED_SLASHES) !!}</script>
